@@ -4,6 +4,10 @@ namespace com\xcitestudios\Generic\Test\Data\Manipulation\Interfaces;
 
 class SerializationInterfaceTest extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * While testing an interface is pointless, it was a way of giving an example of how
+     * to implement the interface and ensure the example remains valid!
+     */
     public function testSerialization()
     {
         $testObject = new \stdClass();
