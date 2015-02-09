@@ -1,0 +1,27 @@
+{
+    "name": "xcitestudios/generic",
+    "description": "Standard interfaces",
+    "homepage": "https://xcitestudios.com/",
+    "license": "MIT",
+    "keywords": ["xcitestudios", "interfaces"],
+    "authors": [
+        {
+            "name": "Wade Womersley",
+            "email": "wade85@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "4.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "com\\xcitestudios\\Generic\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "com\\xcitestudios\\Generic\\Test\\": "tests/"
+        }
+    }
+}
