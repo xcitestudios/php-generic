@@ -14,12 +14,12 @@ interface SerializationInterface
      * @param string $jsonString Representation of the object
      * @return void
      */
-    public function deserialize($jsonString);
+    public function deserializeJSON($jsonString);
 
     /**
      * Convert this object into JSON so it can be handled by anything that supports JSON.
      *
      * @return string A JSON representation of this object.
      */
-    public function serialize();
+    public function serializeJSON();
 }

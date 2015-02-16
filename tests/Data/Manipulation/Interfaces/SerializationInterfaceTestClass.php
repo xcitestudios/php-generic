@@ -1,5 +1,4 @@
 <?php
-
 namespace com\xcitestudios\Generic\Test\Data\Manipulation\Interfaces;
 
 class SerializationInterfaceTestClass implements \com\xcitestudios\Generic\Data\Manipulation\Interfaces\SerializationInterface,
@@ -47,7 +46,7 @@ class SerializationInterfaceTestClass implements \com\xcitestudios\Generic\Data\
     }
 
         
-    public function deserialize($jsonString) {
+    public function deserializeJSON($jsonString) {
         $obj = json_decode($jsonString);
         
         $this->setIntA($obj->intA);
@@ -56,7 +55,7 @@ class SerializationInterfaceTestClass implements \com\xcitestudios\Generic\Data\
         $this->setObjA($obj->objA);
     }
 
-    public function serialize() {
+    public function serializeJSON() {
         return \json_encode($this);
     }
 
