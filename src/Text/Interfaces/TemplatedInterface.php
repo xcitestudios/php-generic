@@ -20,7 +20,7 @@ interface TemplatedInterface
 	 *
 	 * @return string
 	 */
-	public function getContent($content);
+	public function getContent();
 
     /**
      * Sets the object passed in to replace items in the content.
