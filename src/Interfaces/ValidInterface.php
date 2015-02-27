@@ -1,4 +1,5 @@
 <?php
+
 namespace com\xcitestudios\Generic\Interfaces;
 
 /**
@@ -7,9 +8,9 @@ namespace com\xcitestudios\Generic\Interfaces;
 interface ValidInterface
 {
     /**
-     * Is this object valid?
+     * Checks if this object is valid.
      *
-     * @return bool True if it is, false if it isn't
+     * @return bool True if it is, false if it isn't.
      */
-    public function IsValid();
+    public function isValid();
 }
