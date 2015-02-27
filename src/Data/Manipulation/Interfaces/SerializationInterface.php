@@ -1,4 +1,5 @@
 <?php
+
 namespace com\xcitestudios\Generic\Data\Manipulation\Interfaces;
 
 /**
@@ -7,11 +8,13 @@ namespace com\xcitestudios\Generic\Data\Manipulation\Interfaces;
 interface SerializationInterface
 {
     /**
-     * Updates the element implementing this interface using a JSON representation. 
-     * This means updating the state of this object with that defined in the JSON 
+     * Updates the element implementing this interface using a JSON representation.
+     *
+     * This means updating the state of this object with that defined in the JSON
      * as opposed to returning a new instance of this object.
      *
-     * @param string $jsonString Representation of the object
+     * @param string $jsonString Representation of the object.
+     *
      * @return void
      */
     public function deserializeJSON($jsonString);
