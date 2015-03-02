@@ -11,6 +11,9 @@ namespace com\xcitestudios\Generic\Data\Manipulation\Interfaces;
 
 /**
  * General interface for an object that can be converted to/from JSON.
+ *
+ * @package com.xcitestudios.Generic
+ * @subpackage Data.Manipulation.Interfaces
  */
 interface SerializationInterface
 {

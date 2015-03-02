@@ -13,6 +13,9 @@ use stdClass;
 
 /**
  * General interface for something that can render a template style string.
+ *
+ * @package com.xcitestudios.Generic
+ * @subpackage Text.Interfaces
  */
 interface TemplatedInterface
 {

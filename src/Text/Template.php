@@ -16,6 +16,9 @@ use stdClass;
 
 /**
  * Simple serializable template using mustache
+ *
+ * @package com.xcitestudios.Generic
+ * @subpackage Text
  */
 class Template implements TemplatedSerializableInterface, JsonSerializable
 {

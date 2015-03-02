@@ -13,6 +13,9 @@ use com\xcitestudios\Generic\Data\Manipulation\Interfaces\SerializationInterface
 
 /**
  * General interface for something that can render a template style string and supports serialization.
+ *
+ * @package com.xcitestudios.Generic
+ * @subpackage Text.Interfaces
  */
 interface TemplatedSerializableInterface extends TemplatedInterface, SerializationInterface
 {

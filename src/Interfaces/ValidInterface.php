@@ -11,6 +11,9 @@ namespace com\xcitestudios\Generic\Interfaces;
 
 /**
  * Really simple interface to add a validation check.
+ *
+ * @package com.xcitestudios.Generic
+ * @subpackage Interfaces
  */
 interface ValidInterface
 {
