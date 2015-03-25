@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    com.xcitestudios.Network &raquo; \com\xcitestudios\Generic\Text\Interfaces\TemplatedInterface
+    <title>    com.xcitestudios.Network &raquo; \com\xcitestudios\Generic\Data\KeyValueStorage\Interfaces\StorageInterface
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -120,32 +120,14 @@
             <i class="icon-custom icon-method"></i> Methods
             <ul>
                                                                                                     <li class="method public">
-        <a href="#method_getContent" title="getContent :: Gets the template version of the content being used during rendering.">
-            <span class="description">Gets the template version of the content being used during rendering.</span><pre>getContent</pre>
+        <a href="#method_remove" title="remove :: Remove an object.">
+            <span class="description">Remove an object.</span><pre>remove</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_getContext" title="getContext :: Gets the object passed in to replace items in the content.">
-            <span class="description">Gets the object passed in to replace items in the content.</span><pre>getContext</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
-        <a href="#method_render" title="render :: Renders content given the context object.">
-            <span class="description">Renders content given the context object.</span><pre>render</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
-        <a href="#method_setContent" title="setContent :: Sets the template version of the content to be used during rendering.">
-            <span class="description">Sets the template version of the content to be used during rendering.</span><pre>setContent</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
-        <a href="#method_setContext" title="setContext :: Sets the object passed in to replace items in the content.">
-            <span class="description">Sets the object passed in to replace items in the content.</span><pre>setContext</pre>
+        <a href="#method_set" title="set :: Store an object.">
+            <span class="description">Store an object.</span><pre>set</pre>
         </a>
     </li>
 
@@ -153,11 +135,11 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                </ul>
+                                                                                                                    </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                </ul>
+                                                                                                                    </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -171,11 +153,11 @@
 
         <div class="span8">
             <div class="element class">
-                <h1>TemplatedInterface</h1>
+                <h1>StorageInterface</h1>
                 <small style="display: block; text-align: right">
-                                            Extends 
+                                            Extends \Interop\Container\ContainerInterface
                                                         </small>
-                <p class="short_description">General interface for something that can render a template style string.</p>
+                <p class="short_description">Storage interface for objects.</p>
                 <div class="details">
                     <div class="long_description">
                         
@@ -196,16 +178,16 @@
                                                                             </th>
                                     <td>
                                                                                     
-                                                                                <p>Text.Interfaces</p>
+                                                                                <p>Data.KeyValueStorage.Interfaces</p>
                                     </td>
                                 </tr>
                                                                         </table>
 
                     <h3><i class="icon-custom icon-method"></i> Methods</h3>
-                                                                <a id="method_getContent"></a>
-                        <div class="element clickable method public  method_getContent" data-toggle="collapse" data-target=".method_getContent .collapse">
-                            <h2>Gets the template version of the content being used during rendering.</h2>
-                            <pre>getContent() : string</pre>
+                                                                <a id="method_remove"></a>
+                        <div class="element clickable method public  method_remove" data-toggle="collapse" data-target=".method_remove .collapse">
+                            <h2>Remove an object.</h2>
+                            <pre>remove(string $id) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -217,33 +199,13 @@
                                     <table class="table">
                                                                                     <tr>
                                                 <th>
-                                                    
+                                                    throws
                                                 </th>
                                                 <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
-
-                                    
-                                                                            <h3>Response</h3>
-                                        <code>string</code><p></p>
-                                                                    </div>
-                            </div>
-
-                        </div>
-                                            <a id="method_getContext"></a>
-                        <div class="element clickable method public  method_getContext" data-toggle="collapse" data-target=".method_getContext .collapse">
-                            <h2>Gets the object passed in to replace items in the content.</h2>
-                            <pre>getContext() : \stdClass</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
                                                                                     <tr>
                                                 <th>
                                                     
@@ -251,73 +213,22 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
-
-                                    
-                                                                            <h3>Response</h3>
-                                        <code>\stdClass</code><p></p>
-                                                                    </div>
-                            </div>
-
-                        </div>
-                                            <a id="method_render"></a>
-                        <div class="element clickable method public  method_render" data-toggle="collapse" data-target=".method_render .collapse">
-                            <h2>Renders content given the context object.</h2>
-                            <pre>render() : string</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                    
-                                                                            <h3>Response</h3>
-                                        <code>string</code><p><p>content rendered using the values in $context</p></p>
-                                                                    </div>
-                            </div>
-
-                        </div>
-                                            <a id="method_setContent"></a>
-                        <div class="element clickable method public  method_setContent" data-toggle="collapse" data-target=".method_setContent .collapse">
-                            <h2>Sets the template version of the content to be used during rendering.</h2>
-                            <pre>setContent(string $content) : void</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
                                                                             </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$content</h4>
-                                                <code>string</code><p><p>Template content.</p></p>
+                                                <h4>$id</h4>
+                                                <code>string</code><p><p>Identifier of the entry to look for.</p></p>
                                             </div>
                                                                             
                                                                     </div>
                             </div>
 
                         </div>
-                                            <a id="method_setContext"></a>
-                        <div class="element clickable method public  method_setContext" data-toggle="collapse" data-target=".method_setContext .collapse">
-                            <h2>Sets the object passed in to replace items in the content.</h2>
-                            <pre>setContext(\stdClass $context) : void</pre>
+                                            <a id="method_set"></a>
+                        <div class="element clickable method public  method_set" data-toggle="collapse" data-target=".method_set .collapse">
+                            <h2>Store an object.</h2>
+                            <pre>set(string $id, mixed $object) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -327,12 +238,23 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
                                                                             </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$context</h4>
-                                                <code>\stdClass</code><p><p>Ibject passed in to replace items in the content.</p></p>
+                                                <h4>$id</h4>
+                                                <code>string</code><p><p>Identifier of the entry to save under.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$object</h4>
+                                                <code>mixed</code><p><p>Object to store</p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -343,14 +265,14 @@
                     
                                                         </div>
             </div>
-            <a id="\com\xcitestudios\Generic\Text\Interfaces\TemplatedInterface"></a>
+            <a id="\com\xcitestudios\Generic\Data\KeyValueStorage\Interfaces\StorageInterface"></a>
             <ul class="breadcrumb">
                 <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
                     
     
-    <li><span class="divider">\</span><a href="../namespaces/com.xcitestudios.Generic.Text.Interfaces.html">Interfaces</a></li>
+    <li><span class="divider">\</span><a href="../namespaces/com.xcitestudios.Generic.Data.KeyValueStorage.Interfaces.html">Interfaces</a></li>
 
-                <li class="active"><span class="divider">\</span><a href="../classes/com.xcitestudios.Generic.Text.Interfaces.TemplatedInterface.html">TemplatedInterface</a></li>
+                <li class="active"><span class="divider">\</span><a href="../classes/com.xcitestudios.Generic.Data.KeyValueStorage.Interfaces.StorageInterface.html">StorageInterface</a></li>
             </ul>
         </div>
     </div>
