@@ -15,8 +15,8 @@ use com\xcitestudios\Generic\Data\KeyValueStorage\Exceptions\NotFoundException;
 /**
  * Simple storage for objects in a local in-memory array, serializes and gzdeflate's.
  *
- * @package com.xcitestudios.Parallelisation
- * @subpackage Storage.Event
+ * @package com.xcitestudios.Generic
+ * @subpackage Data.KeyValueStorage
  */
 class CompressedArrayStore extends ArrayStore
 {

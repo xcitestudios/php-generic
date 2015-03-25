@@ -16,8 +16,8 @@ use Interop\Container\Exception\ContainerException;
 /**
  * Simple storage for objects in a local in-memory key store.
  *
- * @package com.xcitestudios.Parallelisation
- * @subpackage Storage.Event
+ * @package com.xcitestudios.Generic
+ * @subpackage Data.KeyValueStorage
  */
 class ArrayStore implements CountableIterableStorageInterface
 {

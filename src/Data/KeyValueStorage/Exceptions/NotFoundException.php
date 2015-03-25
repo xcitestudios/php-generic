@@ -15,7 +15,7 @@ use Exception;
 /**
  * Thrown by storage interfaces for events.
  *
- * @package com.xcitestudios.Parallelisation
+ * @package com.xcitestudios.Generic
  * @subpackage Data.KeyValueStorage.Exceptions
  */
 class NotFoundException extends Exception
