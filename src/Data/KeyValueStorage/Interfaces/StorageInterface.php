@@ -11,7 +11,6 @@ namespace com\xcitestudios\Generic\Data\KeyValueStorage\Interfaces;
 
 use com\xcitestudios\Generic\Data\KeyValueStorage\Exceptions\NotFoundException;
 use Interop\Container\ContainerInterface;
-use Iterator;
 
 /**
  * Storage interface for objects.
@@ -19,7 +18,7 @@ use Iterator;
  * @package com.xcitestudios.Generic
  * @subpackage Data.KeyValueStorage.Interfaces
  */
-interface StorageInterface extends ContainerInterface, Iterator
+interface StorageInterface extends ContainerInterface
 {
     /**
      * Store an object.

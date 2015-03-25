@@ -9,7 +9,7 @@
 
 namespace com\xcitestudios\Generic\Data\KeyValueStorage;
 
-use com\xcitestudios\Generic\Data\KeyValueStorage\Interfaces\StorageInterface;
+use com\xcitestudios\Generic\Data\KeyValueStorage\Interfaces\CountableIterableStorageInterface;
 use com\xcitestudios\Generic\Data\KeyValueStorage\Exceptions\NotFoundException;
 use Interop\Container\Exception\ContainerException;
 
@@ -19,7 +19,7 @@ use Interop\Container\Exception\ContainerException;
  * @package com.xcitestudios.Parallelisation
  * @subpackage Storage.Event
  */
-class ArrayStore implements StorageInterface
+class ArrayStore implements CountableIterableStorageInterface
 {
     /**
      * @var array
@@ -139,5 +139,19 @@ class ArrayStore implements StorageInterface
     public function rewind()
     {
         reset($this->objects);
+    }
+
+    /**
+     * (PHP 5 &gt;= 5.1.0)<br/>
+     * Count elements of an object
+     * @link http://php.net/manual/en/countable.count.php
+     * @return int The custom count as an integer.
+     * </p>
+     * <p>
+     * The return value is cast to an integer.
+     */
+    public function count()
+    {
+        return count($this->objects);
     }
 }
