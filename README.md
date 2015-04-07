@@ -1,5 +1,7 @@
 # com.xcitestudios.Generic
 
+[![Build Status](https://travis-ci.org/xcitestudios/php-generic.svg?branch=master)](https://travis-ci.org/xcitestudios/php-generic)
+
 Interfaces designed to be re-used as part of other interfaces or having multiple uses.
 
 
